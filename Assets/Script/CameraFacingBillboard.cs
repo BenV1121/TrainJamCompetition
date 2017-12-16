@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class CameraFacingBillboard : MonoBehaviour
 {
-    public new Camera camera;
+    public new GameObject camera;
+
+    void Start()
+    {
+        camera = GameObject.FindGameObjectWithTag("MainCamera");
+    }
 
 	// Update is called once per frame
 	void Update ()

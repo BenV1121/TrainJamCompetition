@@ -20,21 +20,20 @@ public class CameraScript : MonoBehaviour
 
     private Transform playerTransform;
 
-    // Use this for initialization
-    void Start ()
+    void Start()
     {
         targets = new List<Transform>();
         selectedTarget = null;
         playerTransform = transform;
 
         AddAllEnemies();
-	}
-	
+    }
+
     public void AddAllEnemies()
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
-        foreach(GameObject enemy in enemies)
+        foreach (GameObject enemy in enemies)
         {
             AddTarget(enemy.transform);
         }
@@ -45,7 +44,7 @@ public class CameraScript : MonoBehaviour
         targets.Add(enemy);
     }
 
-    public void SortTargetsByDistance()
+    private void SortTargetsByDistance()
     {
         targets.Sort(delegate (Transform t1, Transform t2)
         {
@@ -79,7 +78,7 @@ public class CameraScript : MonoBehaviour
 
     private void SelectTarget()
     {
-
+        //selectedTarget.renderer.material.color = Color.red;
     }
 
     private void DeselectTarget()
@@ -88,8 +87,9 @@ public class CameraScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update ()
+    void Update()
     {
+        //xRotation -= Input.GetAxis("Mouse Y") * lookSensitivity;
         yRotation += Input.GetAxis("Mouse X") * lookSensitivity;
 
         xRotation = Mathf.Clamp(xRotation, -90, 90);
@@ -103,14 +103,9 @@ public class CameraScript : MonoBehaviour
 
         LockMouse();
 
-        if(Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             TargetEnemy();
-        }
-
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            DeselectTarget();
         }
 
         transform.LookAt(selectedTarget);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyDamageTrigger : MonoBehaviour
 {
     public float damageOnContact = 5.0f;
-    public float damageOverTime = 2.0f;
+    public float damageOverTime = 4.0f;
 
     private List<IDamageable> occupants = new List<IDamageable>();
 
@@ -27,6 +27,12 @@ public class EnemyDamageTrigger : MonoBehaviour
         occupants.Add(target);
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "Castle")
+            damageOverTime -= Time.deltaTime;
+    }
+
     private void OnTriggerExit(Collider other)
     {
         IDamageable target = other.gameObject.GetComponent<IDamageable>();
@@ -34,5 +40,8 @@ public class EnemyDamageTrigger : MonoBehaviour
         if(target == null) { return; }
 
         occupants.Remove(target);
+
+        if (other.gameObject.tag == "Player" || other.gameObject.tag == "Castle")
+            damageOverTime = 4.0f;
     }
 }

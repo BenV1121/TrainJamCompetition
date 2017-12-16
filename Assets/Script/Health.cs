@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 interface IDamageable
 {
@@ -10,15 +11,13 @@ interface IDamageable
     void TakeDamage(float damageDealt);
 }
 
-public class Health : MonoBehaviour
+public class Health : MonoBehaviour, IDamageable
 {
     public float healthValue = 100;
 
     public bool isDead = false;
 
     public Image hp;
-
-    bool damaged;
 
     public bool knockedBack;
 
@@ -48,11 +47,9 @@ public class Health : MonoBehaviour
     {
         hp.fillAmount = healthValue / 100;
 
-        damaged = false;
-
         if(isDead)
         {
-            Application.LoadLevel(Application.loadedLevel);
+            SceneManager.LoadScene("Test");
         }
 	}
 

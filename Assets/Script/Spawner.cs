@@ -23,7 +23,6 @@ public class Spawner : MonoBehaviour
     {
         if (other.gameObject.tag == "Train")
         {
-            Debug.Log("Spawn yo");
             prefabSpawn = Instantiate(prefabSpawn, spawnLocations[0].transform.position, Quaternion.Euler(0,0,0)) as GameObject;
         }
     }

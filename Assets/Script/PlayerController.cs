@@ -21,15 +21,18 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody pRigidbody;
 
+    static Animator anim;
+
     // Use this for initialization
     void Start ()
     {
         pRigidbody = gameObject.GetComponent<Rigidbody>();
-        gameObject.transform.GetChild(1).gameObject.SetActive(false);
+        gameObject.transform.GetChild(3).gameObject.SetActive(false);
+        anim = GetComponent<Animator>();
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update ()
     {
         if(!canMove)
         {
@@ -64,6 +67,15 @@ public class PlayerController : MonoBehaviour
         {
             pRigidbody.AddForce(Vector3.up * 300);
         }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            anim.SetBool("isAttacking", true);
+        }
+        else
+        {
+            anim.SetBool("isAttacking", false);
+        }
     }
 
     void OnCollisionEnter(Collision other)
@@ -93,7 +105,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E))
             {
-                gameObject.transform.GetChild(1).gameObject.SetActive(true);
+                gameObject.transform.GetChild(3).gameObject.SetActive(true);
                 Destroy(other.gameObject);
             }
         }

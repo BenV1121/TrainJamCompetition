@@ -20,7 +20,7 @@ public class DamageTrigger : MonoBehaviour
             if(target == null) { return; }
             if(shouldIgnorePlayer)
             {
-                if(other.gameObject.CompareTag("Player"))
+                if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Castle"))
                 {
                     return;
                 }

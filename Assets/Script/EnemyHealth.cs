@@ -12,6 +12,8 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     public bool knockedBack;
 
+    CameraScript cam;
+
     public float EstimatedDamageTaken(float damageDealt)
     {
         return damageDealt;
@@ -33,6 +35,9 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 		if(isDead)
         {
             Destroy(gameObject);
+            cam = GetComponent<CameraScript>();
+
+            cam.selectedTarget = null;
         }
 	}
 

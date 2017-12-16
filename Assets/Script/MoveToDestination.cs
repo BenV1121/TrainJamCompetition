@@ -14,6 +14,7 @@ public class MoveToDestination : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         destination = agent.destination;
+        castle = GameObject.FindGameObjectWithTag("Castle").transform;
 	}
 	
 	// Update is called once per frame

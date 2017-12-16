@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CastleHP : MonoBehaviour, IDamageable
 {
@@ -10,8 +11,6 @@ public class CastleHP : MonoBehaviour, IDamageable
     public bool isDead = false;
 
     public Image hp;
-
-    bool damaged;
 
     void Start()
     {
@@ -40,6 +39,7 @@ public class CastleHP : MonoBehaviour, IDamageable
         if (isDead)
         {
             Destroy(transform.parent.gameObject);
+            SceneManager.LoadScene("Test");
         }
     }
 

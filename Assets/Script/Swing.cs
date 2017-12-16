@@ -24,11 +24,22 @@ public class Swing : MonoBehaviour
                 if (Input.GetButtonDown("Fire1"))
                 {
                     anim.SetBool("isAttacking2", true);
-
+                    if (stillInAttackFrame)
+                    {
+                        if (Input.GetButtonDown("Fire1"))
+                        {
+                            anim.SetBool("isAttacking3", true);
+                        }
+                        else
+                        {
+                            anim.SetBool("isAttacking3", false);
+                        }
+                    }
                 }
                 else
                 {
                     anim.SetBool("isAttacking2", false);
+                    anim.SetBool("isAttacking3", false);
                 }
             }
         }
@@ -36,6 +47,7 @@ public class Swing : MonoBehaviour
         {
             anim.SetBool("isAttacking1", false);
             anim.SetBool("isAttacking2", false);
+            anim.SetBool("isAttacking3", false);
         }
 	}
 }
