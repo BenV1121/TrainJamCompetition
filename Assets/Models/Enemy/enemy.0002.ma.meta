@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 03d6fb0a9f9e1db4a84e6088955ea5c8
+timeCreated: 1513390815
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: end
+    100002: //RootNode
+    100004: head
+    100006: hip_ctrl
+    100008: L_arm_ctrl
+    100010: L_arm_IK
+    100012: L_clavicle
+    100014: L_elbow
+    100016: L_elbow_ctrl
+    100018: L_end
+    100020: l_end
+    100022: l_end 1
+    100024: L_foot_ctrl
+    100026: L_foot_IK
+    100028: L_hip
+    100030: L_knee
+    100032: L_knee_ctrl
+    100034: L_shoulder
+    100036: pCube2
+    100038: pedestal
+    100040: pelvis
+    100042: R_arm_ctrl
+    100044: R_arm_IK
+    100046: R_clavicle
+    100048: R_elbow
+    100050: R_elbow_ctrl
+    100052: R_end
+    100054: R_foot_ctrl
+    100056: R_foot_IK
+    100058: R_hip
+    100060: R_knee
+    100062: R_knee_ctrl
+    100064: R_shoulder
+    100066: spine
+    100068: spine2
+    400000: end
+    400002: //RootNode
+    400004: head
+    400006: hip_ctrl
+    400008: L_arm_ctrl
+    400010: L_arm_IK
+    400012: L_clavicle
+    400014: L_elbow
+    400016: L_elbow_ctrl
+    400018: L_end
+    400020: l_end
+    400022: l_end 1
+    400024: L_foot_ctrl
+    400026: L_foot_IK
+    400028: L_hip
+    400030: L_knee
+    400032: L_knee_ctrl
+    400034: L_shoulder
+    400036: pCube2
+    400038: pedestal
+    400040: pelvis
+    400042: R_arm_ctrl
+    400044: R_arm_IK
+    400046: R_clavicle
+    400048: R_elbow
+    400050: R_elbow_ctrl
+    400052: R_end
+    400054: R_foot_ctrl
+    400056: R_foot_IK
+    400058: R_hip
+    400060: R_knee
+    400062: R_knee_ctrl
+    400064: R_shoulder
+    400066: spine
+    400068: spine2
+    4300000: pCube2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pCube2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pCube2
+        weight: 1
+      - path: pedestal
+        weight: 1
+      - path: pedestal/hip_ctrl
+        weight: 1
+      - path: pedestal/hip_ctrl/L_arm_ctrl
+        weight: 1
+      - path: pedestal/hip_ctrl/L_arm_ctrl/L_arm_IK
+        weight: 1
+      - path: pedestal/hip_ctrl/L_elbow_ctrl
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/L_hip
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/L_hip/L_knee
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/L_hip/L_knee/L_end
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/R_hip
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/R_hip/R_knee
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/R_hip/R_knee/R_end
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/head
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/head/end
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/L_clavicle
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/L_clavicle/L_shoulder
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/L_clavicle/L_shoulder/L_elbow
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/L_clavicle/L_shoulder/L_elbow/l_end
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/R_clavicle
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/R_clavicle/R_shoulder
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/R_clavicle/R_shoulder/R_elbow
+        weight: 1
+      - path: pedestal/hip_ctrl/pelvis/spine/spine2/R_clavicle/R_shoulder/R_elbow/l_end
+          1
+        weight: 1
+      - path: pedestal/hip_ctrl/R_arm_ctrl
+        weight: 1
+      - path: pedestal/hip_ctrl/R_arm_ctrl/R_arm_IK
+        weight: 1
+      - path: pedestal/hip_ctrl/R_elbow_ctrl
+        weight: 1
+      - path: pedestal/L_foot_ctrl
+        weight: 1
+      - path: pedestal/L_foot_ctrl/L_foot_IK
+        weight: 1
+      - path: pedestal/L_foot_ctrl/L_knee_ctrl
+        weight: 1
+      - path: pedestal/R_foot_ctrl
+        weight: 1
+      - path: pedestal/R_foot_ctrl/R_foot_IK
+        weight: 1
+      - path: pedestal/R_foot_ctrl/R_knee_ctrl
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
